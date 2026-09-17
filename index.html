@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B.Tech CSE Portfolio | JECRC University</title>
+  <meta name="description" content="Portfolio of a B.Tech Computer Science & Engineering student at JECRC University, Jaipur. Showcasing software development, DSA, web projects, and hackathon achievements." />
+  <meta name="keywords" content="BTech CSE, JECRC University, Computer Science, Web Developer, Portfolio, Software Engineer, Jaipur" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Background Glow & Grid -->
+  <div class="background-effects">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#hero" class="logo">
+        <span class="logo-code">&lt;</span>
+        <span class="logo-name">JECRC<span class="accent-dot">.</span>CSE</span>
+        <span class="logo-code">/&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#terminal" class="nav-link terminal-badge"><i class="fa-solid fa-terminal"></i> Terminal</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link nav-btn">Let's Connect</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section" id="hero">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-indicator"></span>
+            <span>B.Tech CSE Student @ JECRC University</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Computer Science Engineer</span>
+          </h1>
+
+          <div class="hero-typing-container">
+            <span class="typing-prefix">&gt; </span>
+            <span class="typing-text" id="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate undergraduate developer at <strong>JECRC University, Jaipur</strong> specializing in full-stack web applications, Data Structures & Algorithms, and modern software engineering. Constantly learning, building, and solving real-world challenges.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Get In Touch</span>
+            </a>
+            <a href="#terminal" class="btn btn-outline">
+              <i class="fa-solid fa-terminal"></i>
+              <span>Launch Terminal</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target="300">300+</span>
+              <span class="stat-label">DSA Problems Solved</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="15">15+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="5">5+</span>
+              <span class="stat-label">Hackathons Attended</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="8.5">8.5+</span>
+              <span class="stat-label">CGPA @ JECRC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-card-wrapper">
+            <div class="code-card">
+              <div class="code-header">
+                <div class="window-controls">
+                  <span class="control close"></span>
+                  <span class="control minimize"></span>
+                  <span class="control expand"></span>
+                </div>
+                <div class="code-tab"><i class="fa-brands fa-js"></i> developer.js</div>
+              </div>
+              <div class="code-body">
+                <pre><code><span class="code-keyword">const</span> <span class="code-variable">student</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"B.Tech CSE Student"</span>,
+  <span class="code-prop">university</span>: <span class="code-string">"JECRC University, Jaipur"</span>,
+  <span class="code-prop">department</span>: <span class="code-string">"Computer Science & Engg."</span>,
+  <span class="code-prop">coreSkills</span>: [<span class="code-string">"DSA"</span>, <span class="code-string">"FullStack"</span>, <span class="code-string">"DBMS"</span>, <span class="code-string">"OS"</span>],
+  <span class="code-prop">isPassionate</span>: <span class="code-boolean">true</span>,
+  <span class="code-prop">readyToCollaborate</span>: <span class="code-boolean">true</span>,
+  <span class="code-function">solveProblem</span>: <span class="code-keyword">function</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Clean code & efficient algorithms"</span>;
+  }
+};</code></pre>
+              </div>
+            </div>
+            <!-- Floating Tech Badges -->
+            <div class="floating-badge badge-1"><i class="fa-brands fa-react"></i> React / JS</div>
+            <div class="floating-badge badge-2"><i class="fa-solid fa-code"></i> C++ / DSA</div>
+            <div class="floating-badge badge-3"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="floating-badge badge-4"><i class="fa-solid fa-database"></i> SQL / DBMS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Engineering Digital Solutions with Code</h2>
+          <p class="section-subtitle">A glimpse into my mindset, background, and what drives me in tech.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <div class="about-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <h3>Who I Am</h3>
+            <p>
+              I am a dedicated Computer Science & Engineering undergraduate at <strong>JECRC University</strong>. I enjoy architecting web applications, writing optimized algorithms, and turning abstract ideas into interactive software solutions.
+            </p>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-icon"><i class="fa-solid fa-code-branch"></i></div>
+            <h3>Technical Philosophy</h3>
+            <p>
+              I believe in writing clean, maintainable code paired with solid fundamentals in Data Structures, Algorithms, Database Management Systems (DBMS), and Computer Networks.
+            </p>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="about-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3>Beyond Code</h3>
+            <p>
+              Active participant in college hackathons, technical clubs at JECRC University, open-source communities, and coding competitions on platforms like LeetCode and GeeksforGeeks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Foundation</h2>
+          <p class="section-subtitle">Structured learning and academic milestones.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">2022 - 2026 (Present)</span>
+                  <h3 class="timeline-title">Bachelor of Technology (B.Tech) - Computer Science & Engineering</h3>
+                  <h4 class="timeline-org"><i class="fa-solid fa-building-columns"></i> JECRC University, Jaipur, Rajasthan</h4>
+                </div>
+                <div class="grade-pill">CGPA: 8.5 / 10</div>
+              </div>
+              <p class="timeline-desc">
+                Currently pursuing core undergraduate studies with an emphasis on Software Engineering, Object-Oriented Programming (OOPs), Operating Systems, Cloud Basics, and Distributed Computing.
+              </p>
+              <div class="coursework-tags">
+                <span class="tag">Data Structures & Algorithms</span>
+                <span class="tag">DBMS & SQL</span>
+                <span class="tag">Operating Systems</span>
+                <span class="tag">Computer Networks</span>
+                <span class="tag">Web Technologies</span>
+                <span class="tag">OOPs in C++/Java</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Senior Secondary (Class XII)</span>
+                  <h3 class="timeline-title">Higher Secondary Education (PCM + Computer Science)</h3>
+                  <h4 class="timeline-org"><i class="fa-solid fa-school"></i> Central Board of Secondary Education (CBSE)</h4>
+                </div>
+                <div class="grade-pill">88.4%</div>
+              </div>
+              <p class="timeline-desc">
+                Developed initial passion for programming through Python and structured problem solving in Mathematics and Physics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Tech Stack</span>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <p class="section-subtitle">Technologies, frameworks, and core engineering proficiencies.</p>
+        </div>
+
+        <!-- Filter tabs for skills -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-skill-filter="all">All Skills</button>
+          <button class="filter-btn" data-skill-filter="languages">Languages</button>
+          <button class="filter-btn" data-skill-filter="frontend">Frontend & Web</button>
+          <button class="filter-btn" data-skill-filter="backend">Backend & DB</button>
+          <button class="filter-btn" data-skill-filter="core">CS Fundamentals</button>
+          <button class="filter-btn" data-skill-filter="tools">Tools & DevOps</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Languages -->
+          <div class="skill-card glass-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+              <h4>C++ / C</h4>
+            </div>
+            <p>DSA, Competitive Programming, STL</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 90%;"></div></div>
+            <span class="skill-pct">90%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+              <h4>JavaScript (ES6+)</h4>
+            </div>
+            <p>Modern syntax, Async/Await, DOM, APIs</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 88%;"></div></div>
+            <span class="skill-pct">88%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+              <h4>Python</h4>
+            </div>
+            <p>Scripting, Automation, AI/ML fundamentals</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 82%;"></div></div>
+            <span class="skill-pct">82%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="languages">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+              <h4>Java</h4>
+            </div>
+            <p>OOPs, Collections, Core concepts</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 78%;"></div></div>
+            <span class="skill-pct">78%</span>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+              <h4>HTML5 & Semantic Markup</h4>
+            </div>
+            <p>Accessibility, SEO, standard layouts</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 95%;"></div></div>
+            <span class="skill-pct">95%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+              <h4>CSS3 & Responsive Design</h4>
+            </div>
+            <p>Flexbox, CSS Grid, Glassmorphism, Animations</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 92%;"></div></div>
+            <span class="skill-pct">92%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+              <h4>React.js</h4>
+            </div>
+            <p>Components, State Hooks, Props, Routing</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 84%;"></div></div>
+            <span class="skill-pct">84%</span>
+          </div>
+
+          <!-- Backend & DB -->
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
+              <h4>Node.js & Express</h4>
+            </div>
+            <p>RESTful APIs, Middleware, Backend logic</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 80%;"></div></div>
+            <span class="skill-pct">80%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+              <h4>MySQL & Relational DB</h4>
+            </div>
+            <p>Schema design, Complex queries, Normalization</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 85%;"></div></div>
+            <span class="skill-pct">85%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+              <h4>MongoDB</h4>
+            </div>
+            <p>NoSQL schemas, CRUD operations, Aggregation</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 80%;"></div></div>
+            <span class="skill-pct">80%</span>
+          </div>
+
+          <!-- CS Fundamentals -->
+          <div class="skill-card glass-card" data-category="core">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <h4>Data Structures & Algorithms</h4>
+            </div>
+            <p>Trees, Graphs, DP, Recursion, Time Complexity</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 88%;"></div></div>
+            <span class="skill-pct">88%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="core">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-cubes"></i></div>
+              <h4>Object-Oriented Design (OOP)</h4>
+            </div>
+            <p>Polymorphism, Inheritance, Encapsulation, SOLID</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 90%;"></div></div>
+            <span class="skill-pct">90%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="core">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+              <h4>Operating Systems & Networks</h4>
+            </div>
+            <p>Process Sync, Memory Mgt, TCP/IP, HTTP/S</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 82%;"></div></div>
+            <span class="skill-pct">82%</span>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+              <h4>Git & GitHub</h4>
+            </div>
+            <p>Version control, branching, PRs, workflows</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 90%;"></div></div>
+            <span class="skill-pct">90%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-brands fa-linux"></i></div>
+              <h4>Linux & Bash</h4>
+            </div>
+            <p>CLI commands, shell scripting, environment setup</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 78%;"></div></div>
+            <span class="skill-pct">78%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-icon"><i class="fa-solid fa-vial"></i></div>
+              <h4>Postman & API Testing</h4>
+            </div>
+            <p>REST API debugging, testing endpoints, JSON payloads</p>
+            <div class="skill-level"><div class="skill-fill" style="width: 85%;"></div></div>
+            <span class="skill-pct">85%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Portfolio Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications, academic capstones, and innovative coding experiments.</p>
+        </div>
+
+        <div class="filter-controls">
+          <button class="filter-btn active" data-project-filter="all">All Projects</button>
+          <button class="filter-btn" data-project-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-project-filter="ai">AI / Smart Apps</button>
+          <button class="filter-btn" data-project-filter="algorithms">CS & Algorithms</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-card" data-category="fullstack" data-project-id="1">
+            <div class="project-banner banner-gradient-1">
+              <div class="project-tag-float">Full Stack</div>
+              <div class="banner-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">JECRC Smart Campus Portal</h3>
+              <p class="project-desc">
+                A centralized student and faculty portal designed for attendance tracking, event notices, classroom room allocation, and digital assignment submission.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Express</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">CSS3</span>
+              </div>
+              <div class="project-links">
+                <button class="btn-project-detail" data-modal="project-1"><i class="fa-solid fa-circle-info"></i> Details</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View Source"><i class="fa-brands fa-github"></i></a>
+                <a href="#hero" class="project-link-icon" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-card" data-category="algorithms" data-project-id="2">
+            <div class="project-banner banner-gradient-2">
+              <div class="project-tag-float">Algorithms</div>
+              <div class="banner-icon"><i class="fa-solid fa-network-wired"></i></div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Interactive Pathfinding & DSA Visualizer</h3>
+              <p class="project-desc">
+                Interactive web visualizer demonstrating Dijkstra's, A*, BFS, and DFS graph traversal algorithms with custom speed controls, maze generators, and barrier drawings.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">HTML5 Canvas</span>
+                <span class="tech-badge">CSS Grid</span>
+                <span class="tech-badge">Graph Theory</span>
+              </div>
+              <div class="project-links">
+                <button class="btn-project-detail" data-modal="project-2"><i class="fa-solid fa-circle-info"></i> Details</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View Source"><i class="fa-brands fa-github"></i></a>
+                <a href="#hero" class="project-link-icon" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass-card" data-category="ai" data-project-id="3">
+            <div class="project-banner banner-gradient-3">
+              <div class="project-tag-float">AI / ML</div>
+              <div class="banner-icon"><i class="fa-solid fa-brain"></i></div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">AI Powered Code Reviewer & Assistant</h3>
+              <p class="project-desc">
+                Web app that analyzes uploaded C++, Python, and JS snippets, highlights bugs, suggests time-complexity optimizations, and suggests clean refactorings.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">OpenAI / LLM API</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">HTML/CSS</span>
+              </div>
+              <div class="project-links">
+                <button class="btn-project-detail" data-modal="project-3"><i class="fa-solid fa-circle-info"></i> Details</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View Source"><i class="fa-brands fa-github"></i></a>
+                <a href="#hero" class="project-link-icon" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card glass-card" data-category="fullstack" data-project-id="4">
+            <div class="project-banner banner-gradient-4">
+              <div class="project-tag-float">Full Stack</div>
+              <div class="banner-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Campus E-Book & Resource Exchange</h3>
+              <p class="project-desc">
+                Peer-to-peer textbook and notes marketplace for university students, featuring student authentication, chat messaging, and category searching.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">Express</span>
+                <span class="tech-badge">JWT Auth</span>
+              </div>
+              <div class="project-links">
+                <button class="btn-project-detail" data-modal="project-4"><i class="fa-solid fa-circle-info"></i> Details</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View Source"><i class="fa-brands fa-github"></i></a>
+                <a href="#hero" class="project-link-icon" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card glass-card" data-category="algorithms" data-project-id="5">
+            <div class="project-banner banner-gradient-1">
+              <div class="project-tag-float">Systems</div>
+              <div class="banner-icon"><i class="fa-solid fa-microchip"></i></div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">CPU Scheduling & Memory Simulator</h3>
+              <p class="project-desc">
+                An OS simulator modeling FCFS, SJF, Round Robin, and Priority scheduling algorithms with interactive Gantt chart rendering and memory page replacement metrics.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">C++</span>
+                <span class="tech-badge">WebAssembly / JS</span>
+                <span class="tech-badge">OS Concepts</span>
+                <span class="tech-badge">Chart.js</span>
+              </div>
+              <div class="project-links">
+                <button class="btn-project-detail" data-modal="project-5"><i class="fa-solid fa-circle-info"></i> Details</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View Source"><i class="fa-brands fa-github"></i></a>
+                <a href="#hero" class="project-link-icon" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card glass-card" data-category="ai" data-project-id="6">
+            <div class="project-banner banner-gradient-2">
+              <div class="project-tag-float">Web Dev</div>
+              <div class="banner-icon"><i class="fa-solid fa-chart-line"></i></div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Crypto & Stock Analytics Dashboard</h3>
+              <p class="project-desc">
+                Real-time financial dashboard consuming REST WebSockets to render candlestick charts, technical indicators, currency conversions, and portfolio tracking.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">WebSockets</span>
+                <span class="tech-badge">CoinGecko API</span>
+                <span class="tech-badge">CSS Glass</span>
+              </div>
+              <div class="project-links">
+                <button class="btn-project-detail" data-modal="project-6"><i class="fa-solid fa-circle-info"></i> Details</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View Source"><i class="fa-brands fa-github"></i></a>
+                <a href="#hero" class="project-link-icon" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Hackathons -->
+    <section class="achievements section" id="achievements">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Milestones</span>
+          <h2 class="section-title">Achievements & Activities</h2>
+          <p class="section-subtitle">Hackathons, competitive coding, and university tech leadership.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-card glass-card">
+            <div class="achievement-icon-wrap"><i class="fa-solid fa-trophy"></i></div>
+            <div class="achievement-body">
+              <span class="achievement-date">2023 - 2024</span>
+              <h3>Smart India Hackathon (SIH) Internal Finalist</h3>
+              <p>Shortlisted among top university teams at JECRC for presenting an automated municipal grievance resolution system.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card glass-card">
+            <div class="achievement-icon-wrap"><i class="fa-solid fa-medal"></i></div>
+            <div class="achievement-body">
+              <span class="achievement-date">2024</span>
+              <h3>JECRC JU Rhythm / Tech-Fest Coding Winner</h3>
+              <p>Secured top ranking in the intra-university speed coding and debug-the-code competitive programming marathon.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card glass-card">
+            <div class="achievement-icon-wrap"><i class="fa-solid fa-code"></i></div>
+            <div class="achievement-body">
+              <span class="achievement-date">Ongoing</span>
+              <h3>300+ LeetCode & GFG Problems Solved</h3>
+              <p>Consistent streak covering Binary Search, Dynamic Programming, Graphs, Trees, and Linked Lists.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card glass-card">
+            <div class="achievement-icon-wrap"><i class="fa-solid fa-users"></i></div>
+            <div class="achievement-body">
+              <span class="achievement-date">2023 - Present</span>
+              <h3>Technical Club Core Member @ JECRC</h3>
+              <p>Organized workshops on Web Development, Git version control, and introductory Python for 100+ junior CSE students.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Dev Terminal -->
+    <section class="terminal-section section" id="terminal">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Interactive CLI</span>
+          <h2 class="section-title">Developer Terminal</h2>
+          <p class="section-subtitle">Try running real commands in this interactive CSE shell console!</p>
+        </div>
+
+        <div class="terminal-window glass-card">
+          <div class="terminal-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control expand"></span>
+            </div>
+            <div class="terminal-title"><i class="fa-solid fa-terminal"></i> jecrc-cse@terminal: ~ (zsh)</div>
+            <div class="terminal-action-buttons">
+              <button id="terminal-clear-btn" title="Clear screen"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+          </div>
+          
+          <div class="terminal-body" id="terminal-output">
+            <div class="terminal-line welcome-line">
+              Welcome to <strong>JECRC CSE DevShell v2.4.0</strong> (x86_64-jecrc-jaipur)
+            </div>
+            <div class="terminal-line info-line">
+              Type <span class="term-highlight">help</span> to view all available commands, or click quick command chips below.
+            </div>
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">jecrc-cse@student:~$</span>
+            <input type="text" id="terminal-input" placeholder="Type a command (e.g. 'help', 'skills', 'about')..." autocomplete="off" spellcheck="false" />
+            <button id="terminal-submit-btn" class="terminal-send-btn" title="Execute"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="terminal-quick-chips">
+            <span>Quick execute:</span>
+            <button class="chip" data-cmd="help">help</button>
+            <button class="chip" data-cmd="about">about</button>
+            <button class="chip" data-cmd="skills">skills</button>
+            <button class="chip" data-cmd="projects">projects</button>
+            <button class="chip" data-cmd="education">education</button>
+            <button class="chip" data-cmd="contact">contact</button>
+            <button class="chip" data-cmd="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something Great</h2>
+          <p class="section-subtitle">Open for software internships, hackathon collaborations, and tech discussions.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info-card glass-card">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out directly via email, connect on LinkedIn, or drop a message using the form.</p>
+
+            <div class="info-items">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4>Location</h4>
+                  <p>JECRC University, Jaipur, Rajasthan, India</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:cse.student@jecrcu.edu.in">cse.student@jecrcu.edu.in</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                  <h4>Department</h4>
+                  <p>Department of Computer Science & Engineering</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+              <a href="mailto:cse.student@jecrcu.edu.in" class="social-btn" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form-card glass-card">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-tag"></i>
+                  <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Project Collaboration" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fa-regular fa-comment-dots"></i>
+                  <textarea id="message" name="message" rows="4" placeholder="Hello! I would like to discuss..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true">
+    <div class="modal-container glass-card">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-content" id="modal-content">
+        <!-- Content will be injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-message" id="toast-message">Message sent successfully!</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="logo">
+          <span class="logo-code">&lt;</span>
+          <span class="logo-name">JECRC<span class="accent-dot">.</span>CSE</span>
+          <span class="logo-code">/&gt;</span>
+        </a>
+        <p>Built with pure HTML5, CSS3, & JavaScript. Proudly representing JECRC University, Jaipur.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#terminal">Terminal</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> B.Tech CSE | JECRC University. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
